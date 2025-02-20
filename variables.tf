@@ -1,0 +1,3 @@
+variable "apikey" {
+  default = "teste"
+}
