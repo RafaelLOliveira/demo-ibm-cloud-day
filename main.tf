@@ -26,7 +26,7 @@ resource "ibm_is_subnet" "subnets_a_2" {
 ## vpc B ##
 
 resource "ibm_is_vpc" "vpc_b" {
-  name = "vpc-b"
+  name = var.vpcname
 }
 
 resource "ibm_is_subnet" "subnets_b_1" {
@@ -44,7 +44,7 @@ resource "ibm_is_subnet" "subnets_b_2" {
 }
 
 resource "ibm_tg_gateway" "new_tg_gw" {
-  name     = "transit-gateway-1"
+  name     = var.tgname
   location = "br-sao"
   global   = true
 }  
@@ -52,7 +52,7 @@ resource "ibm_tg_gateway" "new_tg_gw" {
 ## VSIs ##
 resource "ibm_is_instance" "vsi1" {
 
-  name           = "vsi-vpc-a"
+  name           = var.vsiname
   vpc            = ibm_is_vpc.vpc_a.id
   keys           = [ibm_is_ssh_key.ssh_rafa.id]
   zone           = "br-sao-1"
