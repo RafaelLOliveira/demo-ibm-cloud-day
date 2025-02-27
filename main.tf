@@ -94,6 +94,6 @@ resource "ibm_is_floating_ip" "example" {
 ### SSH ###
 
 resource "ibm_is_ssh_key" "ssh_rafa" {
-  name       = "ssh-rafa"
+  name       = "ssh-teste-demo"
   public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCaoqih72rWA2AA9SHf4EaQtPGfx5AGGpex0Tnp2sBB2ArhYCLaw7D4t0C3UnySXmhqsXz6fzrQmmlrgHAIqdm3QbgQJNaPnoLyqJqpR7M6OFqBBSIu6Tfps+8kxGBBfzVirY7JyWcrXJxe2DTlJJOiywNsRUXTRiwHboQSv1C2Lq6t2SVIOMLzaorNgccP5zLOl3JJRpxmEVdsRdOEGMjD6Xw1R9obesUUPIaMtvCRWQFg8YvHC3nAMegcvh2QEk2U++O5zGeIhJOchpumrRL1iJ79odiiFIlxe1+GkCCAXBDl1IKO54AJwnEOfJ87g9sqa27bKzi8sTe1gZq6t1qVrJW3FouxuTqyCeWWIUKCFl+CvvpzKwFdJSMBSCCP8cHs+E6AJBqUCok46k8m/O+ZZEj4dqhrAGRCLnNduvBx/ZtyV2W5yfrQbF1a9LH+Ii0c5WlL3rw86mVlcL4PP42kCDg9/IK3XDBf8AIapz3fVh71I2KzX7ZbytURr7azUWea/qu5E6WETeiaGZklHqL3hwTicYltYrPmE/O9f20AWff2p+nrsfc3DYiiDSdj9p4b+2FWTpTL/crqpD+q2o4j4SJJLZDagRzlMfpKN0g8n/0vW5CnE73UBKSuoVNb1+dHVxo0FM8BN6sK14DWC6oMhEIvBgmahPVY/qoHx9rKdw=="
 }
